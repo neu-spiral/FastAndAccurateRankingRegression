@@ -6,7 +6,7 @@ The code in this repository implements the algorithms and experiments in the fol
 We implement seven inference algorithms to estimate Plackett-Luce scores from choice observations. Four are *feature methods*, i.e., algorithms that regress Plackett-Luce scores from features:  
 - PLADMM and PLADMM-log that we propose (implemented in `admm_lin.py` and `admm_log.py`, respectively), 
 - Sequential least-squares quadratic programming (SLSQP) that parametrizes scores as linear functions of features as in PLADMM (implemented in `mle_lin.py`), and
-- Newton on $\beta$ that parametrizes scores as logistic functions of features as in PLADMM-log and solves the resulting convex problem via Newton's method (implemented in `mle_exp.py`). 
+- Newton on \beta that parametrizes scores as logistic functions of features as in PLADMM-log and solves the resulting convex problem via Newton's method (implemented in `mle_exp.py`). 
 
 The remaining three are *featureless methods*, i.e., algorithms that learn the Plackett-Luce scores from the choice observations alone (implemented in `only_scores.py`): 
 - Iterative Luce Spectral Ranking (ILSR) by Maystre and Grossglauser (2015), 
